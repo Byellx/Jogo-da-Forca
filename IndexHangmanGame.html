@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>The Hangman Game</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        
+        <div class="div_do_cabecalho">
+            <h1>Jogo da Forca</h1>
+        </div>
+
+        <div class="div_do_cabecalho">
+            <button id="comecar" class="elementos_inicio">Começar</button>
+            <div id="tempo" class="elementos_inicio">Tempo</div>
+        </div>
+
+    </header>
+
+
+    <article id="conteiner_jogo">
+
+        <section id="conteiner_palavra_secreta" class="eight_percent">
+            <label class="clabel">Palavra secreta:</label>
+            <input id="palavra_secreta" type="text" disabled>
+            <button id="enviar_palavra_secreta">Enviar</button>
+        </section>
+
+        <section id="conteiner_adivinha_letra" class="eight_percent">
+            <label class="clabel">Adivinhe a letra:</label>
+            <input id="letra" type="text" maxlength="1" disabled>
+            <button id="tentar_letra">Tentar</button>
+        </section>
+
+        <section id="conteiner_adivinha_palavra" class="eight_percent">
+            <label class="clabel">Adivinhe a palavra:</label>
+            <input id="palavra" type="text" disabled>
+            <button id="responder_palavra">Responder</button>
+        </section>
+
+        <section id="conteiner_letras_informadas" class="eight_percent">
+            <label class="clabel">Letras já informadas:</label>
+            <p id="letras_informadas" class="p"></p>
+        </section>
+
+        <section id="conteiner_letras_erradas" class="eight_percent">
+            <label class="clabel">Letras erradas:</label>
+            <p id="letras_erradas" class="p"></p>
+        </section>
+
+        <section id="conteiner_tentativas_restantes" class="eight_percent">
+            <label class="clabel">Tentativas restantes:</label>
+            <p id="tentativas_restantes"></p>
+        </section>
+
+    </article>
+
+    <article id="conteiner_desenho">
+
+        <section id="conteiner_letras_adivinhadas" class="cla">
+
+        </section>
+
+        <!--<section id="desenho_corpo">
+            <div id="cabeca" class="cabeca"><p>X</p><p>X</p></div>
+            <div id="troncosuperior" class="tronco1"></div>
+            <div id="troncoinferior" class="tronco2"></div>
+        </section>-->
+
+    </article>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
