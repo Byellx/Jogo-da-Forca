@@ -117,7 +117,6 @@ function tentarLetra()
             letras_informadas.innerText += " " + comparaLetra;
             letras_erradas.innerText += " " + comparaLetra;
             tentativas.innerText--;
-            //desenhaCorpo(tentativas.innerText);
         }else{
             window.alert("A letra " + comparaLetra + " já foi informada!");
         }
@@ -165,31 +164,5 @@ function resultado(comparador)
         window.alert("Você venceu!");
     }
 }
-
-
-/* Implementar depois
-
-var cabeca = document.getElementById("cabeca");
-var troncosuperior = document.getElementById("troncosuperior");
-var troncoinferior = document.getElementById("troncoinferior");
-
-function desenhaCorpo(tentativa)
-{
-    console.log(tentativa);
-
-    if(tentativa == 5){
-        cabeca.style.display = "block";
-    }else if(tentativa == 4){
-        troncosuperior.style.display = "block";
-    }else if(tentativa == 3){
-        
-    }else if(tentativa == 2){
-
-    }else if(tentativa == 1){
-        
-    }else if(tentativa == 0){
-
-    }
-}*/
 
 start.addEventListener("click", iniciarJogo);
